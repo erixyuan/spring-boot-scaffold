@@ -1,4 +1,4 @@
-# 项目名称
+# spring-boot-scaffold
 
 这个项目是一个基于 Spring Boot 的脚手架，旨在快速搭建 Spring Boot 应用并集成以下功能和组件：
 
