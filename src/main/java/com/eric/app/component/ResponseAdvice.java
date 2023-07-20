@@ -44,6 +44,9 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
         if(body instanceof Exception){
             return ResultData.fail(ReturnCode.RC500.getCode(), ReturnCode.RC500.getMessage());
         }
+        if(body instanceof ResultData){
+            return body;
+        }
         return ResultData.success(body);
     }
 
